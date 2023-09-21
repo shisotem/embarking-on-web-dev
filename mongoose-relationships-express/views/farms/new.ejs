@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>農場の新規登録</title>
+</head>
+<body>
+    <h1>農場の新規登録</h1>
+    <form action="/farms" method="POST">
+        <div>
+            <label for="name">農場名</label>
+            <input type="text" id="name" name="name" placeholder="農場名">
+        </div>
+        <div>
+            <label for="city">市</label>
+            <input type="text" id="city" name="city" placeholder="市">
+        </div>
+        <div>
+            <label for="email">メールアドレス</label>
+            <input type="text" id="email" name="email" placeholder="メールアドレス">
+        </div>
+
+        <button>登録</button>
+    </form>
+</body>
+</html>

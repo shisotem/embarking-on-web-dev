@@ -1,0 +1,82 @@
+/* % */
+#percentages {
+    background-color: red;
+    width: 500px;
+    height: 500px;
+}
+
+#percentages div {
+    background-color: green;
+    /* 親要素に対して */
+    width: 70%;
+    height: 20%;
+}
+
+#ems h1 {
+    font-size: 40px;
+    border: 1px solid black;
+    /* 自身のfont-sizeに対して */
+    line-height: 200%;
+}
+
+
+/* em */
+#ems h2 {
+    /* 親要素のfont-size基準 */
+    font-size: 2em;
+    /* 自身のfont-size基準 */
+    margin-left: 1em;
+}
+
+#ems h3 {
+    /* 親要素のfont-size基準 */
+    font-size: 1.5em;
+}
+
+#ems p {
+    /* 親要素のfont-size基準 */
+    font-size: 1em;
+}
+
+#ems {
+    font-size: 20px;
+}
+
+button {
+    background-color: paleturquoise;
+    color: white;
+    /* 親要素のfont-size基準 */
+    font-size: 1em;
+    /* 自身のfont-size基準 */
+    padding: 0 1em;
+    border-radius: 0.5em;
+}
+
+ul {
+    /* emの弱点 -> ulが雪だるま式で大きくなってしまう */
+    font-size: 1.5em;
+}
+
+
+/* rem (root em): 基準は html 要素の font-size */
+#rems h2 {
+    font-size: 3rem;
+}
+
+#rems h3 {
+    font-size: 2rem;
+}
+
+#rems ul {
+    font-size: 1.5rem;
+}
+
+#rems button {
+    font-size: 1.5rem;   
+}
+
+/* 何でもかんでも rem ではなく border-radius などは em の方が良い！ */
+
+html {
+    font-size: 20px;
+}

@@ -1,0 +1,51 @@
+/* h1 {
+    background-color: palegoldenrod;
+    border: 1px solid black;
+
+    display: inline;
+}
+
+span {
+    background-color: paleturquoise;
+    border: 1px solid black;
+
+    display: block;
+} */
+
+
+/* INLINE */
+span {
+    border: 1px solid black;
+    /* width, height => 無意味 */
+    width: 500px;
+    /* 水平方向 => padding, margin が効く！（どかす）*/
+    /* 垂直方向 => 他コンテンツをどかすまでの効力はない */
+    padding: 50px;
+    margin: 50px;
+}
+
+/* BLOCK */
+h1 {
+    background-color: paleturquoise;
+    border: 1px solid black;
+    /* 全部効く！ */
+    width: 300px;
+    height: 200px;
+    padding: 50px;
+    margin: 100px;
+}
+
+/* BLOCK => INLINE-BLOCK */
+div {
+    background-color: olivedrab;
+    border: 5px solid black;
+    
+    display: inline-block;
+    /* INLINE の配置なのに BLOCK のように、全部効く！ */
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    padding: 50px;
+}
+
+/* display: none; => 非表示に出来る（jsと組み合わせて使う？）*/

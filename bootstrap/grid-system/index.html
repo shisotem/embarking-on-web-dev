@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- grid system: .container>.row>12個のスペースを列で分配 -->
+    <div class="container">
+        <h1 class="display-1 text-center text-primary">The Grid System</h1>
+        <div class="row">
+            <div class="col-6 bg-success">col-6</div>
+            <div class="col-6 bg-warning">col-6</div>
+        </div>
+        <div class="row">
+            <div class="col-3 bg-success">col-3</div>
+            <div class="col-6 bg-warning">col-6</div>
+            <div class="col-1 bg-danger">col-1</div>
+        </div>
+        <div class="row">
+            <div class="col bg-primary">col</div>
+            <div class="col bg-secondary">col</div>
+            <div class="col-9 bg-primary">col-9</div>
+            <div class="col bg-secondary">col</div>
+        </div>
+
+        <h2 class="display-4">Responsive Grid</h2>
+        <div class="row">
+            <div class="col-md-6 col-xl-3 bg-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                accusamus incidunt. Optio
+                quidem reiciendis ad sequi accusantium inventore nihil doloremque voluptatem excepturi minima sint
+                laborum sapiente, voluptates fugiat quaerat voluptatum.</div>
+            <div class="col-md-6 col-xl-3 bg-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                accusamus incidunt. Optio
+                quidem reiciendis ad sequi accusantium inventore nihil doloremque voluptatem excepturi minima sint
+                laborum sapiente, voluptates fugiat quaerat voluptatum.</div>
+            <div class="col-md-6 col-xl-3 bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                accusamus incidunt. Optio
+                quidem reiciendis ad sequi accusantium inventore nihil doloremque voluptatem excepturi minima sint
+                laborum sapiente, voluptates fugiat quaerat voluptatum.</div>
+            <div class="col-md-6 col-xl-3 bg-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                accusamus incidunt. Optio
+                quidem reiciendis ad sequi accusantium inventore nihil doloremque voluptatem excepturi minima sint
+                laborum sapiente, voluptates fugiat quaerat voluptatum.</div>
+        </div>
+
+        <h2>Grid Alignment</h2>
+        <div class="row align-items-center">
+            <div class="col-3 bg-danger">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam minima quod, consequatur similique
+                repellat esse, blanditiis mollitia nihil sed eveniet, ipsam perferendis impedit sunt magni aut
+                recusandae minus distinctio a.
+            </div>
+            <div class="col-3 bg-warning">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam minima quod, consequatur similique
+                repellat esse, blanditiis mollitia nihil sed eveniet, ipsam perferendis impedit sunt magni aut
+                recusandae minus distinctio a.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus minus labore ullam consectetur cum
+                deleniti sunt! Laborum possimus molestias sed magni nobis voluptates dolore facere? Nemo nostrum harum
+                mollitia maiores?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi magnam temporibus ullam, quibusdam ab
+                at, quaerat reprehenderit tenetur odio, minus debitis qui nihil itaque distinctio quasi voluptates aut
+                sint. Assumenda!
+            </div>
+            <div class="col-3 bg-success">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam minima quod, consequatur similique
+                repellat esse, blanditiis mollitia nihil sed eveniet, ipsam perferendis impedit sunt magni aut
+                recusandae minus distinctio a.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis perferendis ipsa eos a doloremque numquam
+                voluptatibus aut tenetur, culpa voluptate, laudantium quas modi quod, reprehenderit quae velit quisquam
+                iusto? Quibusdam.
+            </div>
+            <div class="col-3 bg-info align-self-end">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam minima quod, consequatur similique
+                repellat esse, blanditiis mollitia nihil sed eveniet, ipsam perferendis impedit sunt magni aut
+                recusandae minus distinctio a.
+            </div>
+        </div>
+
+        <h3>Justify Content</h3>
+        <div class="row justify-content-center justify-content-lg-start justify-content-xl-between border">
+            <div class="col-md-4 bg-primary">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio a numquam repudiandae dolorum amet
+                atque quos vel doloremque, temporibus eius ut fugit repellendus, dicta explicabo vero minus sed deleniti
+                exercitationem.
+            </div>
+            <div class="col-md-4 bg-info">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio a numquam repudiandae dolorum amet
+                atque quos vel doloremque, temporibus eius ut fugit repellendus, dicta explicabo vero minus sed deleniti
+                exercitationem.
+            </div>
+        </div>
+
+        <div class="row no-gutters">
+            <div class="col-xl-4 col-md-6">
+                <img class="img-fluid"
+                    src="https://images.unsplash.com/photo-1683009427666-340595e57e43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=1000&q=60">
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <img class="img-fluid"
+                    src="https://images.unsplash.com/photo-1682685796965-9814afcbff55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=60">
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <img class="img-fluid"
+                    src="https://plus.unsplash.com/premium_photo-1675826774815-35b8a48ddc2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=1000&q=60">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

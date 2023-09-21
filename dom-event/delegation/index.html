@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delegation（移譲）</title>
+</head>
+
+<body>
+    <h1>Twitter</h1>
+    <!-- form: submitされたらactionのパスにリクエストを投げる -->
+    <!-- そして、帰ってきたレスポンスで画面をリフレッシュする -->
+
+    <!-- "Tweet" => page遷移をせず、反映したい -->
+    <form id="tweetForm" action="/foo">
+        <input type="text" name="username" placeholder="ユーザ名">
+        <input type="text" name="tweet" placeholder="いまどうしてる？">
+        <button>Tweet</button>
+    </form>
+
+    <h2>Timeline</h2>
+    <ul id="tweets">
+        <li>default li item</li>
+        <li>default li item</li>
+    </ul>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

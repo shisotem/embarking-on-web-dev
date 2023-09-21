@@ -1,0 +1,73 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, 
+h2 {
+    text-align: center;
+}
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    /* height: 500px; */
+    margin: 0 auto;
+    border: 5px solid #003049;
+    
+    display: flex;  
+    flex-direction: row; /* 主軸（main axis）の方向 */
+    justify-content: center; /* （主軸の方向に）どのように並べるか */
+    flex-wrap: wrap; /* 交差軸（cross axis）の方向・wrapが生じるようになる */
+    /* align-items: flex-start; （交差軸の方向に）どのように並べるか */
+    /* align-content: center; 交差軸のスペース配分・wrapが生じないなら無意味 */
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+
+    flex-basis: 200px; /* 主軸方向の要素幅・width or heightより強い */
+    /* flex-grow: 1; */
+    /* max-width: 300px; */
+}
+
+/* "余ったスペースを" 1 : 2 で配分 */
+div:nth-of-type(1) {
+    flex-grow: 1;
+    flex-shrink: 3; /* 他よりも3倍の速度で縮む */
+}
+div:nth-of-type(5) {
+    flex-grow: 2;
+    flex-shrink: 0; /* 全く縮まない */
+}
+
+/* div:nth-of-type(5) {
+    align-self: flex-start; 交差軸の方向に特定要素を動かす
+}
+div:nth-of-type(2) {
+    align-self: center;
+}
+div:nth-of-type(3) {
+    align-self: flex-end;
+} */
+
+
+main {
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid black;
+    display: flex;
+}
+
+main .sidebar {
+    border: 2px solid black;
+    background-color: purple;
+    flex: 1 2 300px;
+}
+
+main .maincontent {
+    background-color: cyan;
+    flex: 2 800px;
+}

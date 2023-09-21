@@ -1,0 +1,18 @@
+h2 {
+    color: #C8F5FF;
+    background-color: rgb(108, 175, 0);
+}
+
+button {
+    color: magenta;
+    background-color: cyan;
+}
+
+p {
+    color: olive;
+    background: orange; /* 画像背景など他にも色々出来てパワフル */
+}
+
+body {
+    background-color: #AE5;
+}

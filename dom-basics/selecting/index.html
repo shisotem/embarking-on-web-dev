@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOM Selecting</title>
+  <link rel="stylesheet" href="app.css" />
+</head>
+
+<body>
+  <h1>ニワトリ</h1>
+  <img id="banner"
+    src="https://images.unsplash.com/photo-1563281577-a7be47e20db9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
+    alt="" />
+  <p>
+    ニワトリという和名は「<a href="/wiki/%E5%BA%AD" title="庭">庭</a>に飼う鳥」、つまり家禽という意味から名づけられた<sup id="cite_ref-Sankaido_1-0"
+      class="reference"><a href="#cite_note-Sankaido-1">[1]</a></sup>。ニワトリは普通「鶏」と書かれるが、「家鶏」で「にわとり」と充てることもある<sup
+      id="cite_ref-Nandoku_2-0" class="reference"><a
+        href="#cite_note-Nandoku-2">[2]</a></sup>。ニワトリは古くは<b>カケ</b>（鶏）と呼ばれた<sup id="cite_ref-Nandoku_2-1"
+      class="reference"><a href="#cite_note-Nandoku-2">[2]</a></sup>。代表的な鳥であるため、単に「とり」ともよばれる<sup
+      id="cite_ref-Shincho_3-0" class="reference"><a
+        href="#cite_note-Shincho-3">[3]</a></sup>。雄のニワトリは「<b>雄鶏</b>（牡鶏）」（<b>おんどり</b>）、雌のニワトリは「<b>雌鶏</b>（牝鶏）」（めんどり）と呼ばれる<sup
+      id="cite_ref-Nandoku_2-2" class="reference"><a href="#cite_note-Nandoku-2">[2]</a></sup><sup
+      id="cite_ref-Shincho_3-1" class="reference"><a href="#cite_note-Shincho-3">[3]</a></sup>。
+  </p>
+
+  <div id="toc" role="navigation" aria-labelledby="mw-toc-heading">
+    <input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display: none" />
+    <div class="toctitle" lang="ja" dir="ltr">
+      <h2 id="mw-toc-heading">目次</h2>
+      <span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span>
+    </div>
+    <ul>
+      <li class="toclevel-1 tocsection-1">
+        <a href="#History"><span class="tocnumber">1</span>
+          <span class="toctext">歴史</span></a>
+      </li>
+      <li class="toclevel-1 tocsection-2">
+        <a href="#Characteristics"><span class="tocnumber">2</span>
+          <span class="toctext">生態・形態上の特徴</span></a>
+        <ul>
+          <li class="toclevel-2 tocsection-3">
+            <a href="#Bantams"><span class="tocnumber">2.1</span>
+              <span class="toctext">バンタム</span></a>
+          </li>
+          <li class="toclevel-2 tocsection-4">
+            <a href="#Polydactyly"><span class="tocnumber">2.2</span>
+              <span class="toctext">多指症</span></a>
+          </li>
+        </ul>
+      </li>
+      <li class="toclevel-1 tocsection-5">
+        <a href="#In_cuisine"><span class="tocnumber">3</span>
+          <span class="toctext">料理</span></a>
+      </li>
+      <li class="toclevel-1 tocsection-6">
+        <a href="#References"><span class="tocnumber">4</span>
+          <span class="toctext">参考文献</span></a>
+      </li>
+      <li class="toclevel-1 tocsection-7">
+        <a href="#Further_reading"><span class="tocnumber">5</span>
+          <span class="toctext">関連項目</span></a>
+      </li>
+    </ul>
+  </div>
+
+  <h2><span class="mw-headline" id="History">歴史</span></h2>
+  <p>
+    ニワトリは<a href="/wiki/%E6%9D%B1%E5%8D%97%E3%82%A2%E3%82%B8%E3%82%A2" title="東南アジア">東南アジア</a>から<a
+      href="/wiki/%E4%B8%AD%E5%9B%BD" title="中国">中国</a>南部において家禽化されたとされる。時期については<a
+      href="/wiki/%E3%83%92%E3%83%84%E3%82%B8" title="ヒツジ">ヒツジ</a>・<a href="/wiki/%E3%83%A4%E3%82%AE"
+      title="ヤギ">ヤギ</a>・<a href="/wiki/%E3%83%96%E3%82%BF" title="ブタ">ブタ</a>と同程度の紀元前8000年前からとするもの、<a
+      href="/wiki/%E3%82%A6%E3%82%B7" title="ウシ">ウシ</a>より遅れて<a href="/wiki/%E3%82%A6%E3%83%9E"
+      title="ウマ">ウマ</a>と同程度の紀元前4000年頃とするものなど諸説ある。<sup id="cite_ref-19" class="reference"><a
+        href="#cite_note-19">[19]</a></sup>家禽化された端緒は食用ではなく、その美しい声や朝一番に鳴く声を求めた祭祀用、および鶏どうしを戦わせる闘鶏用であったと推定されている<sup
+      id="cite_ref-20" class="reference"><a
+        href="#cite_note-20">[20]</a></sup>。ただし、家禽化されて間もなく肉および卵も食用とされるようになり、やがてそちらの方が飼育の主目的とされるようになった。<a
+      href="/wiki/%E3%82%A4%E3%83%B3%E3%83%80%E3%82%B9%E6%96%87%E6%98%8E" title="インダス文明">インダス文明</a>に属する<a
+      href="/wiki/%E3%83%A2%E3%83%98%E3%83%B3%E3%82%B8%E3%83%A7%E3%83%BB%E3%83%80%E3%83%AD" class="mw-redirect"
+      title="モヘンジョ・ダロ">モヘンジョ・ダロ</a>の遺跡からはニワトリの粘土像と印章、ニワトリの大腿骨が出土しており、これがニワトリの存在を示す証拠としては最も古いものである。その後、ニワトリは3方向に分かれて伝播していった。西方への伝播はまず紀元前15世紀から紀元前14世紀にかけて<a
+      href="/wiki/%E3%82%A8%E3%82%B8%E3%83%97%E3%83%88"
+      title="エジプト">エジプト</a>に伝播した。他の西アジア地域においてこの時期はニワトリの存在が認められないため、この伝播は海上ルートによるものと考えられているが、まもなくエジプトのニワトリはいったん絶え、<a
+      href="/wiki/%E3%83%97%E3%83%88%E3%83%AC%E3%83%9E%E3%82%A4%E3%82%AA%E3%82%B9%E7%8E%8B%E6%9C%9D" class="mw-redirect"
+      title="プトレマイオス王朝">プトレマイオス王朝</a>期に再び持ち込まれた<sup id="cite_ref-21" class="reference"><a
+        href="#cite_note-21">[21]</a></sup>。その後、インダス川流域からニワトリは陸伝いに西アジアへと広まり、紀元前8世紀ごろにはギリシアに持ち込まれ、紀元前5世紀ごろにはギリシア文明の諸都市に広く分布するようになっていた。ギリシア諸都市で発行された硬貨には、ニワトリが刻印されたものが多く存在している<sup
+      id="cite_ref-22" class="reference"><a
+        href="#cite_note-22">[22]</a></sup>。新大陸にはニワトリはもともと生息しておらず、コロンブスの新大陸発見後にヨーロッパ人によって持ち込まれた。第2のルートは北へ向かって中国へと伝わるルートであり、日本への伝播もこのルートによるものである。
+  </p>
+
+  <img class="square"
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Silky_bantam.jpg/440px-Silky_bantam.jpg" alt="" />
+  <img class="square" src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Male_Silkie.png"
+    alt="" />
+  <img class="square"
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Partridge_Silkie_hen.jpg/900px-Partridge_Silkie_hen.jpg"
+    alt="" />
+
+  <script src="app.js"></script>
+</body>
+
+</html>

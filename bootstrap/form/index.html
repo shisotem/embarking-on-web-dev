@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-2">Forms</h1>
+        <form action="#nowhere">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="email">メールアドレス</label>
+                    <input type="email" name="email" id="email" class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="password">パスワード</label>
+                    <input type="password" name="password" id="password" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-3 col-6">
+                    <label for="zipcode">郵便番号</label>
+                    <input type="text" name="zipcode" id="zipcode" class="form-control">
+                </div>
+                <div class="form-group col-md-3 col-6">
+                    <label for="pref">都道府県</label>
+                    <select name="pref" id="pref" class="form-control">
+                        <option value="1">北海道</option>
+                        <option value="2">青森県</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="city">市区町村</label>
+                    <input type="text" name="city" id="city" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="address">住所</label>
+                <input type="text" name="address" id="address" class="form-control">
+            </div>
+
+            <!-- <div class="form-check">
+                    <input type="checkbox" class="form-check-input" value="" id="defaultCheck1">
+                    <label for="defaultCheck1" class="form-check-label">
+                        Default checkbox
+                    </label>
+                </div> -->
+            <div class="form-group">
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="subscribe">
+                    <label for="subscribe" class="custom-control-label">
+                        購読する
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-success">登録する</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

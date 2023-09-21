@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>農場一覧</title>
+</head>
+<body>
+    <%= messages %>
+    <h1>農場一覧</h1>
+    <ul>
+        <% for (const farm of farms) { %>
+            <li><a href="/farms/<%= farm._id %>"><%= farm.name %></a></li>
+        <% } %>
+    </ul>
+    <a href="/farms/new">新規作成</a>
+</body>
+</html>

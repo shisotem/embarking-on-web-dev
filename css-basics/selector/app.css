@@ -1,0 +1,134 @@
+/* * {
+    background-color: cyan;
+} */
+
+body {
+    background-color: #f1faee;
+}
+
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+h1,
+h2 {
+    color: #1d2557;
+}
+
+#signup {
+    color: #f1faee;
+    background-color: #1d2557;
+}
+
+span {
+    color: #457b9d;
+}
+
+.tag {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 16px;
+}
+
+/* 子孫セレクタ */
+.post a {
+    color: #457b9d;
+    text-decoration: none; 
+    font-weight: 700;  
+}
+
+footer a {
+    color: #e63946;
+}
+
+/* input + button {
+    background-color: pink;
+} */
+
+/* 隣接セレクタ */
+h2+button {
+    font-size: 20px;
+}
+
+/* 直下セレクタ */
+footer>a {
+    color: #457b9d;
+}
+
+input[type="password"] {
+    color: greenyellow;
+}
+
+/* 属性セレクタ（idなどclass以外にも色々な属性を指定可能） */
+section[class="post"] {}
+/* 同じ指定（section 要素で post クラスを持っている要素を選択）*/
+/* ただし、ドットを使用する場合は、クラス名のみが指定可能 */
+/* <section class="post"> */
+section.post {}
+
+/* 含む */
+a[href*="google"] {
+    color: magenta;
+}
+
+/* 擬似クラス（:hover）=> 「状態」 */
+.post button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color: aqua;
+}
+
+.post:nth-of-type(2n) {
+    background-color: #c9d5c5;
+}
+
+/* 疑似要素（::first-letter）=> 「場所」 */
+/* コロン1つでも許される */
+h2::first-letter {
+    font-size: 50px;
+}
+
+p::first-line {
+    color: purple;
+}
+
+/* ドラッグによるハイライト */
+p::selection {
+    background-color: sandybrown;
+}
+
+/* 全体に適用 */
+/* ::selection {
+    background-color: sandybrown;
+} */
+
+h1,
+h2 {
+    color: yellow;
+}
+
+button:hover {
+    background-color: olive;
+    font-size: 10px;
+}
+
+/* button {
+    background-color: magenta !important;
+} */
+
+/* 詳細度（specificity）*/
+/* (!important) : anti-pattern! */
+/* (inline-style) : anti-pattern! */
+/* 1. id */
+/* 2. クラス、疑似クラス、属性 */
+/* 3. 要素、疑似要素 */
+
+/* カスケード: （詳細度が同じとき）後の記述が勝つ */

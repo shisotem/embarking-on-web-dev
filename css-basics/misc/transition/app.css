@@ -1,0 +1,43 @@
+/* 初期状態 */
+.circle {
+    width: 300px;
+    height: 300px;
+    background-color: magenta;
+
+    /* トランジション */
+    transition: background-color 1s, border-radius 2s;
+    /* transition: background-color 1s 3s; <= 3s の delay */
+}
+/* 最終状態 */
+.circle:hover {
+    background-color: cyan;
+    border-radius: 50%;
+}
+
+/* 初期状態 */
+section div {
+    height: 100px;
+    width: 100px;
+    background-color: turquoise;
+    margin: 20px 0;
+
+    /* トランジション */
+    transition: margin-left 3s;
+}
+/* 最終状態 */
+section:hover div {
+    margin-left: 500px;
+}
+/* 3s を どんな感じに？ */
+div:nth-of-type(1) {
+    transition-timing-function: ease-in;
+}
+div:nth-of-type(2) {
+    transition-timing-function: ease-out;
+}
+div:nth-of-type(3) {
+    transition-timing-function: cubic-bezier(0.7, 0, 0.84, 0);
+}
+div:nth-of-type(4) {
+    transition-timing-function: cubic-bezier(0.85, 0, 0.15, 1);
+}

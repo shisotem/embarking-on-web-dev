@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コメント</title>
+</head>
+<body>
+    <h1>コメント ID: <%= comment.id %></h1>
+    <h2><%= comment.comment %> - <%= comment.username %></h2>
+    <a href="/comments">一覧に戻る</a>
+    <a href="/comments/<%= comment.id %>/edit">編集</a>
+    <form method="POST" action="/comments/<%= comment.id %>?_method=DELETE">
+        <button>削除</button>
+    </form>
+</body>
+</html>

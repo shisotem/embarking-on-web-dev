@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コメント編集</title>
+</head>
+
+<body>
+    <h1>コメント編集</h1>
+    <!-- form: デフォルトでGET/POSTのみ -> method-override -->
+    <!-- 実際はPOSTで投げているが、PATCHリクエストとしてルーティングされるようになる！ -->
+    <form method="POST" action="/comments/<%= comment.id %>?_method=PATCH">
+        <textarea name="comment" id="" cols="30" rows="5"><%= comment.comment %></textarea>
+        <button>保存</button>
+    </form>
+</body>
+
+</html>

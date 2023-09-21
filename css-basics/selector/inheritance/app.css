@@ -1,0 +1,19 @@
+body {
+    color: purple;   
+}
+
+section {
+    color: aqua;
+}
+
+form {
+    color: greenyellow;
+}
+
+/* 標準では継承が起きない"要素"もある */
+input,
+button {
+    color: inherit;
+}
+
+/* 継承プロパティ（color...）と非継承プロパティ（border...）がある */

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>イベントのバブリング</title>
+    <style>
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section onclick="alert('section click')">
+        section:
+        <p onclick="alert('p click')">
+            p:
+            <button onclick="alert('button click')">button</button>
+        </p>
+    </section>
+
+    <div id="container">
+        click to hide - 
+        <button id="changeColor">change color</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品の編集</title>
+</head>
+<body>
+    <h1>商品の編集</h1>
+    <form action="/products/<%= product._id %>?_method=PUT" method="POST"> <!-- POSTが来てもExpress側でPUTに上書き -->
+        <label for="name">商品名</label>
+        <input type="text" id="name" name="name" placeholder="商品名" value="<%= product.name %>"> <!-- value: 入力 -->
+        <label for="price">価格</label>
+        <input type="number" id="price" name="price" placeholder="価格" value="<%= product.price %>">
+        <label for="category">カテゴリ</label>
+        <select name="category" id="category">
+            <% for (const category of categories) { %>
+                <option value="<%= category %>" <%= product.category === category ? 'selected' : '' %>><%= category %></option>
+            <% } %>
+        </select>
+        <button>登録</button>
+    </form>
+    <a href="/products/<%= product._id %>">キャンセル</a>
+</body>
+</html>

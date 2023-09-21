@@ -1,0 +1,13 @@
+<%- include('partials/head') %>
+
+    <%- include('partials/navbar') %>
+    
+    <h1>Dogs</h1>
+    <!-- イコールあり: JSコードを評価する＆HTMLに埋め込む -->
+    <ul>
+        <% for (const dog of dogs) { %>
+        <li><%= dog %></li>
+        <% } %>
+    </ul>
+
+<%- include('partials/footer') %>

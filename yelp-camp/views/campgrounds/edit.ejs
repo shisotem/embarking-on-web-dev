@@ -1,0 +1,60 @@
+<% layout('layouts/boilerplate') %>
+<div class="row">
+    <h1 class="text-center">キャンプ場の編集</h1>
+    <div class="offset-md-3 col-md-6">
+        <form action="/campgrounds/<%= campground._id %>?_method=PUT" method="POST" novalidate class="validated-form" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label class="form-label" for="title">タイトル</label>
+                <input class="form-control" type="text" name="campground[title]" id="title" value="<%= campground.title %>" required>
+                <div class="valid-feedback">
+                    OK!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="location">場所</label>
+                <input class="form-control" type="text" name="campground[location]" id="location" value="<%= campground.location %>" required>
+                <div class="valid-feedback">
+                    OK!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="price">価格</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="price-label">¥</span>
+                    <input type="text" class="form-control" id="price" placeholder="0" aria-label="価格"
+                        aria-describedby="price-label" name="campground[price]" value="<%= campground.price %>" required>
+                    <div class="valid-feedback">
+                        OK!
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="description">説明</label>
+                <textarea class="form-control" type="text" name="campground[description]"
+                    id="description" required><%= campground.description %></textarea>
+                <div class="valid-feedback">
+                    OK!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="image" class="form-label">画像の追加アップロード</label>
+                <input class="form-control" type="file" id="image" name="image" multiple>
+            </div>
+            <div class="mb-3">
+                <% campground.images.forEach(function (img, i) { %>
+                    <img src="<%= img.thumbnail %>" class="img-thumbnail" alt="">
+                    <div class="form-check-inline">
+                        <input type="checkbox" name="deleteImages[]" id="image-<%= i %>" value="<%= img.filename %>">
+                        <!-- -> 2つにcheckを入れて送信してみる -> req.bodyに、deleteImages: ['yelp-camp/xpwuybfbblowhnprfzm9', 'yelp-camp/yncsruqofjpp54py3bbf'] という配列のプロパティが追加されている -->
+                        <!-- -> name="deleteImages[]" というデータが複数個渡ってきたとき、これらを配列として認識してパースするため！ -->
+                    </div>
+                    <label for="image-<%= i %>">削除する</label>
+                <% }) %>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-info">更新する</button>
+            </div>
+        </form>
+        <a href="/campgrounds">一覧に戻る</a>
+    </div>
+</div>

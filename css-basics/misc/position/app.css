@@ -1,0 +1,47 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #3d405b;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+.middle {
+    background-color: #81b29a;
+}
+
+#static .middle {
+    /* デフォルトで static */
+    position: static;
+    /* staticでは top left など無意味 */
+    top: 100px;
+}
+
+#relative .middle {
+    /* 空間が確保されるので、 */
+    /* "見た目だけ"がずれる（自身からの相対配置） */
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+/* "直近のpositionされている祖先" */
+#absolute {
+    position: relative;
+}
+
+#absolute .middle {
+    /* 空間が確保されない */
+    /* "直近のpositionされている祖先"（ないなら包含ブロック: 今はbody）から相対配置 */
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+#fixed .middle {
+    /* viewport内にあり続ける以外はabsoluteと似ている（viewport内での相対配置） */
+    position: fixed;
+    top: 0;
+    left: 0;
+}

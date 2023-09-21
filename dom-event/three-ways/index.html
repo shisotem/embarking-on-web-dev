@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>2種のアンチパターンと1種のベストプラクティス</h1>
+    
+    <h2>inline event handler</h2>
+    <button onclick="alert('Hi!')">click me</button>
+    <button ondblclick="alert('Hi!'); alert(':>')">double click me</button>
+    
+    <h2>イベント用プロパティによる方法</h2>
+    <button id="v2">click me</button>
+    
+
+    <h2>addEventListener（ベストプラクティス）</h2>
+    <button id="v3">click me</button>
+    <button id="foobar">foobar</button>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

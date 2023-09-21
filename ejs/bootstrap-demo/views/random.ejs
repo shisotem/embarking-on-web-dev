@@ -1,0 +1,15 @@
+<%- include('partials/head') %>
+
+    <%- include('partials/navbar') %>
+
+    <h1>random number: <%= num %>
+    </h1>
+    <% if (num % 2===0) { %>
+        <h2>Even!</h2>
+    <% } else { %>
+        <h2>Odd!</h2>
+    <% } %>
+
+    <h3><%= num % 2 === 0 ? 'Even!!!' : 'Odd!!!' %></h3>
+    
+<%- include('partials/footer') %>

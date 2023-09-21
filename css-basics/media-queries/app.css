@@ -1,0 +1,80 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+nav {
+    font-size: 1.5em;
+    display: flex;
+    /* 主軸はデフォルトで左から右 */
+    justify-content: space-between;
+}
+ul,
+li {
+    display: inline; /* ・が消える */
+    margin: 0;
+    padding: 0;
+}
+ul {
+    flex: 1; /* grow */
+    max-width: 50%; /* growを抑制 */
+    display: flex; /* flex in flex! */
+    justify-content: space-evenly;   
+}
+
+/* @media (min-width: 1000px) and (max-width: 1500px) {
+    h1 {
+        color: purple;
+    }
+} */
+
+/* CSSは後勝ちなので、500以下でもredにならない
+@media (max-width: 500px) {
+    h1 {
+        color: red;
+    }
+}
+@media (max-width: 1000px) {
+    h1 {
+        color: orange;
+    }
+} */
+
+h1 {
+    color: red;
+}
+@media (min-width: 500px) {
+    h1 {
+        color: orange;
+    }
+}
+@media (min-width: 1000px) {
+    h1 {
+        color: yellow;
+    }
+}
+
+/* @media (orientation: landscape) {
+    body {
+        background-color: magenta;
+    }
+} */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4em;
+    }
+    nav,
+    nav ul {
+        flex-direction: column;
+        align-items: center; /* 交差軸（左右）の真ん中 */
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 3em;
+    }
+}

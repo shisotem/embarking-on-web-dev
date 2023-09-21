@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>GET VS. POST</h1>
+    <h2>GET</h2>
+    <!-- ローカルのget-post.html（fileプロトコル）からサーバ（http://localhost）にリクエストを投げるという -->
+    <!-- イレギュラーな状況のため、ここではhttpからのフルパスで書いている -->
+    <form action="http://localhost:3000/tacos" method="GET">
+        <input type="text" name="meat">
+        <input type="number" name="qty">
+        <button>Submit</button>
+    </form>
+    <h2>POST</h2>
+    <form action="http://localhost:3000/tacos" method="POST">
+        <input type="text" name="meat">
+        <input type="number" name="qty">
+        <button>Submit</button>
+    </form>
+</body>
+</html>
